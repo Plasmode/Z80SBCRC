@@ -2,6 +2,7 @@
 These are list of connections over the existing rev1 ProtoRC. 
 
 CPLD is already prewired with address, data, and control signals.
+```
 VCC to Z80 (pin 11) <- note RAM is battery-backed via DS1210
 GND to RAM (pin 16) and Z80 (pin 29)
 Data D[7:0] from RAM to Z80 to RC2014 connector
@@ -23,8 +24,10 @@ RAM A15 (pin 31) to T20
 RAM A16 (pin 2) to T19
 RAM A17 (pin 30) to T16 
 RAM A18 (pin 1) to T18
+```
 ***
 **CF interface:**
+```
 IDE pin 35 (A0) to A0
 IDE pin 33 (A1) to A1
 IDE pin 36 (A2) to A2
@@ -41,11 +44,14 @@ IDE pin 31 (nINTR) to 4.7K pullup
 IDE pin 23 (nIOWR) to T31
 IDE pin 25 (nIORD) to T30
 IDE pin 37 (nCS1FX) to T29
+```
 ***
 **DS1210 Battery backup** 
+```
 pins 3, 4, 7 to GND
 pin 2 to battery (CR1210)
 pin 8 to VCC
 pin 1 to RAM VCC (pin 32)
 pin 5 to nMREQ
 pin 6 to RAM nCS (pin 22)
+```
