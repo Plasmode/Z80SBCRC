@@ -27,12 +27,12 @@ Since there is no ROM on board, there needs to be a way of loading program in RA
 * [ProtoRC rev1 schematic](https://github.com/Plasmode/ProtoRC/blob/master/protoRC_r1_scm.pdf).  This is the base on which Z80SBCRC is built on.
   - [Wiring list](Z80SBCRC_wiring_list.md) of Z80SBCRC
 * Memory map of Z80SBCRC
-* CPLD equations of Altera EPM7128SQC100
+* [CPLD equations](working_CF_22M_16kbank.zip) of Altera EPM7128SQC100
 ### Software for Z80SBCRC
-* Serial bootstrap, this 255-byte program is serially loaded into lowest part of RAM.  Execution starts from 0x0 after the 255th byte is loaded.
-* ZMon, simple monitor for Z80SBCRC
-* SCMonitor, a sophiscated monitor by [Steve Cousins](http://scc.me.uk/) ported to Z80SBCRC
-* cpm22all, CP/M22 for Z80SBCRC
+* [Serial bootstrap](Z80SBCLD.BIN), this 255-byte program is serially loaded into lowest part of RAM.  Execution starts from 0x0 after the 255th byte is loaded.  Here is the [source](Z80SBCLoad.asm)
+* [ZMon](Zmon.asm), simple monitor for Z80SBCRC.  Here is the [source](Zmon.asm)
+* [SCMonitor](SCM_startrek.hex), a sophiscated monitor by [Steve Cousins](http://scc.me.uk/) ported to Z80SBCRC.  Note, this version of SCMonitor has the StarTrek BASIC program loaded.  To run StarTrek in BASIC, type 'WBASIC', then 'RUN'.
+* [cpm22all](cpm22all.hex), CP/M22 for Z80SBCRC.  Here is the [source](CPM22all.asm)
 * xmodem, this is first loaded into memory as Intel HEX file, then boot up CP/M and type 'SAVE 17 XMODEM.COM' to create the first file in CP/M22 disk
 * CPM22DISTRO, this is the distribution files for CP/M2.2.  It is packaged as .pkg file.  It needs depkg.com (below) to unpackage into CP/M2.2 system files
 * depkg.com, this file unpackage the CPM22DISTRO above.
