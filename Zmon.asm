@@ -7,7 +7,7 @@
 ;  show the correct memory address with 'R' command
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; ZZMon, Copyright (C) 2018 Hui-chien Shen
+; ZMon, Copyright (C) 2018 Hui-chien Shen
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 RxData  	equ 0f9h        	; CPLD UART receive register
