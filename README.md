@@ -33,9 +33,9 @@ Since there is no ROM on board, there needs to be a way of loading program in RA
 * [ZMon](Zmon.asm), simple monitor for Z80SBCRC.  Here is the [source](Zmon.asm)
 * [SCMonitor](SCM_startrek.hex), a sophiscated monitor by [Steve Cousins](http://scc.me.uk/) ported to Z80SBCRC.  Note, this version of SCMonitor has the StarTrek BASIC program loaded.  To run StarTrek in BASIC, type 'WBASIC', then 'RUN'.
 * [cpm22all](cpm22all.hex), CP/M22 for Z80SBCRC.  Here is the [source](CPM22all.asm)
-* xmodem, this is first loaded into memory as Intel HEX file, then boot up CP/M and type 'SAVE 17 XMODEM.COM' to create the first file in CP/M22 disk
-* CPM22DISTRO, this is the distribution files for CP/M2.2.  It is packaged as .pkg file.  It needs depkg.com (below) to unpackage into CP/M2.2 system files
-* depkg.com, this file unpackage the CPM22DISTRO above.
+* [xmodem.hex](XMODEM.HEX), this is first loaded into memory as Intel HEX file, then boot up CP/M and type 'SAVE 17 XMODEM.COM' to create the first file in CP/M22 disk
+* [CPM22DRI.PKG](cpm22dri.pkg), this is the distribution files for CP/M2.2.  It is packaged as .pkg file.  It needs depkg.com (below) to unpackage into CP/M2.2 system files
+* [depkg.com](depkg.com), this file unpackage the CPM22DISTRO above.
 ## Construction log
 [Sequence of photos](construction_log/readme.md) of Z80SBCRC being constructed.
 
