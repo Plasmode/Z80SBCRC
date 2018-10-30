@@ -1,4 +1,4 @@
-; 10/25/18 TinyLoad for protoZ80SBC
+; 10/25/18 TinyLoad for protoZ80SBC, Z80SBCLoad
 ; Derived from TinyLoad for Z280
 ; default I/O location is 0xF8 for status, 0xF9 for data
 ; status bits are D[0] for transmit empty, D[1] for receive ready.  D[7..2] are 0xF8 which is high 6 bits 
@@ -10,7 +10,7 @@
 ; file load program fit in 256 bytes
 ; File is intel HEX format
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; TinyLoad, Copyright (C) 2018 Hui-chien Shen
+; Z80SBCLoad, Copyright (C) 2018 Hui-chien Shen
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 RxData  	equ 0f9h        	; CPLD UART receive register
