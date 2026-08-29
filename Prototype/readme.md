@@ -30,7 +30,7 @@ Since there is no ROM on board, there needs to be a way of loading program in RA
 * [CPLD equations](../working_CF_22M_16kbank.zip) of Altera EPM7128SQC100
 ### Software for Z80SBCRC
 * [Serial bootstrap binary](../Z80SBCLD.BIN), this 255-byte program is serially loaded into lowest part of RAM as binary.  Execution starts from 0x0 after the 255th byte is loaded.  Here is the [source](../Z80SBCLoad.asm)
-* [ZMon in Intel Hex format](../Zmon.hex), simple monitor for Z80SBCRC.  Here is the [source](../Zmon.asm)
+* [ZMon in Intel Hex format](../ZMon.hex), simple monitor for Z80SBCRC.  Here is the [source](../Zmon.asm)
 * [SCMonitor](../SCM_startrek.hex), a sophiscated monitor by [Steve Cousins](http://scc.me.uk/) ported to Z80SBCRC.  Note, this version of SCMonitor has the StarTrek BASIC program loaded.  To run StarTrek in BASIC, type 'WBASIC', then 'RUN'.
 * [cpm22all in Intel Hex format](../cpm22all.hex), CP/M22 for Z80SBCRC.  Here is the [source](../CPM22all.asm)
 * [xmodem.hex in Intel Hex format](../XMODEM.HEX), this is first loaded into memory as Intel HEX file, then boot up CP/M and type 'SAVE 17 XMODEM.COM' to create the first file in CP/M22 disk
