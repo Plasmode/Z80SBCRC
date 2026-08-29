@@ -2,9 +2,9 @@
 ## Introduction
 The original intent of Z80SBCRC is to design a very simple single-board Z80 computer to check out the handful of 20MHz Z80 chips I purchased off eBay.  The design built on a Prototype for RC2014 board (https://github.com/Plasmode/ProtoRC) and added Z80 and SRAM and later a compact flash drive.  All the logic are inside the existing EPM7128 CPLD on the prototype board.
 
-![](DSC_40221029.jpg)
+![](../DSC_40221029.jpg)
 
-[Solder side](DSC_40231029.jpg) picture of Z80SBCRC prototype.
+[Solder side](../DSC_40231029.jpg) picture of Z80SBCRC prototype.
 
 ## Features
 * 20MHz Z80 running at 22MHz
@@ -24,7 +24,7 @@ The RAM is divided into 32 16Kbyte banks such that any 4 banks can be accessed b
 Since there is no ROM on board, there needs to be a way of loading program in RAM initially.  This is accomplished by putting the board in the "serial bootstrap" mode via a jumper selection.  In this mode, Z80 bus is tristated immediately after reset, the serial port waits for incoming 255 data at 115200,N,8,1 and place the data in RAM starting from location 0x0 to 0xFF.  When the 255th byte of serial data is received, the bus mastership is relinquished back to Z80 and it begins program execution at 0x0, just like a normal power-on reset.  Once program is loaded, the mode jumper can be changed to "RAM bootstrap" mode where the Z80 will boot from location 0x0 of RAM normally.
 
 ## Design Data
-* [ProtoRC rev1 schematic](https://github.com/Plasmode/ProtoRC/blob/master/protoRC_r1_scm.pdf).  This is the base on which Z80SBCRC is built on.
+* [ProtoRC rev1 schematic](../protoRC_r1_scm.pdf).  This is the base on which Z80SBCRC is built on.
   - [Wiring list](Z80SBCRC_wiring_list.md) of Z80SBCRC
 * Memory map of Z80SBCRC
 * [CPLD equations](working_CF_22M_16kbank.zip) of Altera EPM7128SQC100
