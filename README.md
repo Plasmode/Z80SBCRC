@@ -1,11 +1,14 @@
 # Z80SBCRC Single board 20MHz Z80 for RC2014
 ## Introduction
-The original intent of Z80SBCRC is to design a very simple single-board Z80 computer to check out the handful of 20MHz Z80 chips I purchased off eBay.  The design built on a Prototype for RC2014 board (https://github.com/Plasmode/ProtoRC) and added Z80 and SRAM and later a compact flash drive.  All the logic are inside the existing EPM7128 CPLD on the prototype board.
+The original intent of Z80SBCRC is to design a very simple single-board Z80 computer to check out the handful of 20MHz Z80 chips I purchased off eBay.  The design built on a Prototype for RC2014 board (https://github.com/Plasmode/ProtoRC) and added Z80 and SRAM and later a compact flash drive.  All the logic are inside the existing EPM7128 CPLD on the prototype board.  This is the link to the [prototype page](Prototype)
 
 ![](DSC_40221029.jpg)
 
 [Solder side](DSC_40231029.jpg) picture of Z80SBCRC prototype.
 
+Z80SBCRC prototype was layout as pc board.  This is the link to the [pc board](Z80SBCRC_Rev0)
+![rev0pcb](Z80SBCRC_Rev0/Z80SBCRC_Rev0_topview.jpg)
+<!---
 ## Features
 * 20MHz Z80 running at 22MHz
 * 512Kbyte SRAM
@@ -40,4 +43,4 @@ Since there is no ROM on board, there needs to be a way of loading program in RA
 * CP/M 3 non-banked sources, [ldrbios](ldrbios.z) to be linked with cpmldr and [cbios3](cbios3.z).  They are assembled with ZMAC.
 ## Construction log
 [Sequence of photos](construction_log/readme.md) of Z80SBCRC being constructed.
-
+--->
