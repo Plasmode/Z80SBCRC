@@ -4,7 +4,7 @@ The original intent of Z80SBCRC is to design a very simple single-board Z80 comp
 
 ![](../DSC_40221029.jpg)
 
-[Solder side](../DSC_40231029.jpg) picture of Z80SBCRC prototype.
+![Solder side](../DSC_40231029.jpg) 
 
 ## Features
 * 20MHz Z80 running at 22MHz
